@@ -14,7 +14,7 @@ import (
 	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
 	"github.com/tendermint/starport/starport/pkg/cosmosver"
 )
-)
+
 
 func main() {
 	flag.Parse()
@@ -81,7 +81,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	http.HandleFunc("/umee/", faucet.ServeHTTP)
+	http.HandleFunc("/umee", faucet.ServeHTTP)
 	log.Infof("listening on :%d", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
 }
