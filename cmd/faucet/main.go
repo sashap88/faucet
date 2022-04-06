@@ -81,7 +81,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	http.HandleFunc("/umee", faucet.ServeHTTP)
+	http.HandleFunc("/", faucet.ServeHTTP)
 	log.Infof("listening on :%d", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
 }
