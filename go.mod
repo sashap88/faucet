@@ -4,8 +4,7 @@ go 1.16
 
 require (
 	github.com/sirupsen/logrus v1.8.1
-	github.com/sashap88/starport v0.19.5
-
+	github.com/tendermint/starport v0.19.5
 
 )
 

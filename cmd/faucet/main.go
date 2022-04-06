@@ -11,10 +11,8 @@ import (
 
 	"github.com/tendermint/starport/starport/pkg/chaincmd"
 	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/sashap88/starport/tree/develop/starport/pkg/cosmosfaucet"
+	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
 	"github.com/tendermint/starport/starport/pkg/cosmosver"
-
-
 )
 
 
@@ -83,7 +81,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	http.HandleFunc("/apifaucet", faucet.ServeHTTP)
+	http.HandleFunc("/", faucet.ServeHTTP)
 	log.Infof("listening on :%d", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
 }
