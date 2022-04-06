@@ -11,8 +11,10 @@ import (
 
 	"github.com/tendermint/starport/starport/pkg/chaincmd"
 	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/sashap88/starport/starport/pkg/cosmosfaucet"
+	"github.com/sashap88/starport/tree/develop/starport/pkg/cosmosfaucet"
 	"github.com/tendermint/starport/starport/pkg/cosmosver"
+
+
 )
 
 
