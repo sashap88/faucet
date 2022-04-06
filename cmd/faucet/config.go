@@ -27,6 +27,7 @@ var (
 	legacySendCmd   bool
 	coinType        string
 	home            string
+	
 )
 
 func init() {
